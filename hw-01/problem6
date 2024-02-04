@@ -1,0 +1,18 @@
+//create  functions to convert from Celsius to Fahrenheit and vise versa
+'use strict'
+
+function CelsiusToFahrenheit(num)
+{
+   const x = num * (9/5) + 32;
+    return x;
+}
+
+function FahrenheitToCelsius(num)
+{
+    const x = (num - 32) * 5/9;
+    return x;
+}
+
+console.log(CelsiusToFahrenheit(0));
+console.log(CelsiusToFahrenheit(100));
+console.log(FahrenheitToCelsius(32));

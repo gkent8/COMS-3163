@@ -1,0 +1,11 @@
+//create function that determines if a number is divisible by 10
+'use strict'
+
+function divisible(num)
+{
+   return num % 10 === 0;
+}
+
+console.log(divisible(20));
+console.log(divisible(10));
+console.log(divisible(19));

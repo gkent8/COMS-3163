@@ -1,0 +1,17 @@
+// function that takes array and multiplies the numbers
+
+"use strict"
+let total = 1;
+
+function multiplyArray(num){
+    for(let i=0; i < a.length; i++)
+    {
+        total *= num[i];
+    }
+    return total;
+}
+let a = [1,2,10,4];
+const result = multiplyArray(a);
+console.log(result);
+
+

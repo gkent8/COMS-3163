@@ -1,0 +1,16 @@
+'use strict';
+// function that filters out negatives from array. it take an array and returns new array
+
+
+function filterNeg(array)
+{
+    const isPositive = (num) => (num >= 0);
+    const result = array.filter(isPositive);
+    return result;
+    
+}
+
+const array = [-1,30,-20,50];
+
+const result = filterNeg(array);
+console.log(result);
