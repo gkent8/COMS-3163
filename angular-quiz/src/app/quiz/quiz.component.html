@@ -1,0 +1,18 @@
+<div *ngIf ="isStarted && !isComplete()" >
+<div>{{ questions[currentQuestion].question }}</div>
+<app-answers [answers]="questions[currentQuestion].answers" (newItemEvent)="onSelectedAnswerChange($event)"></app-answers>
+
+  <button (click)="nextQuestion()">Next Question</button>
+
+</div>
+
+<div *ngIf ="isComplete()">
+  <h2>Quiz Results</h2>
+  <p> You made a {{score}} out of {{questions.length}}! </p>
+  <button (click)="restartQuiz()">Restart Quiz</button>
+</div>
+
+<div *ngIf="!isStarted"><button (click)="startQuiz()">Start Quiz</button></div>
+
+
+<!--<app-answers [answers]="questions[currentQuestion].answers" [selectedAnswer]="selectedOption"></app-answers>-->
