@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "question": "2 + 2 = 4?",
+        "type": "trueFalse",
+        "answers": ["true", "false"],
+        "correctAnswer": [0]
+    },
+
+    {
+        "id" : 2,
+        "question": "What kind of engine is in the new 2023 C8 Corvette Z06",
+        "type": "multipleChoice",
+        "answers": [
+            "3.6L VVT ",
+            "5.7L Hemi",
+            "5.7L LT6",
+            "6.2 L LT4 supercharged V8"
+        ],
+        "correctAnswer": [3]
+    }
+]
